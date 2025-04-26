@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Método Monte Carlo: Definición y Aplicaciones</title>
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>El Método Monte Carlo: Definición y Aplicaciones</h1>
+        </header>
+        
+        <main>
+            <div class="vintage-border">
+                <p>El Método Monte Carlo es una técnica matemática y computacional que permite predecir los posibles resultados de eventos inciertos mediante la simulación y el muestreo aleatorio repetido. Esta herramienta es especialmente valiosa para el análisis de riesgos cuantitativos y la toma de decisiones bajo incertidumbre.</p>
+            </div>
+            
+            <div class="img-container">
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Casino_de_Monte-Carlo_%2849582351802%29.jpg/960px-Casino_de_Monte-Carlo_%2849582351802%29.jpg" alt="Casino de Monte Carlo en Mónaco">
+                    <figcaption class="caption">Casino de Monte Carlo en Mónaco, origen del nombre del método</figcaption>
+                </figure>
+            </div>
+            
+            <h2>Orígenes e Historia</h2>
+            <p>El método fue inventado por John von Neumann y Stanislaw Ulam durante la década de 1940. Recibió su nombre de la ciudad de Mónaco, famosa por sus casinos, ya que el elemento de azar en el método es similar al juego de la ruleta. Inicialmente desarrollado durante la Segunda Guerra Mundial para mejorar la toma de decisiones en condiciones inciertas, actualmente se utiliza ampliamente en diversos sectores.</p>
+            
+            <div class="img-container">
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/JohnvonNeumann-LosAlamos.jpg/500px-JohnvonNeumann-LosAlamos.jpg" alt="John von Neumann">
+                    <figcaption class="caption">John von Neumann, uno de los inventores del Método Monte Carlo</figcaption>
+                </figure>
+            </div>
+            
+            <h2>¿Cómo funciona?</h2>
+            <p>La simulación de Monte Carlo funciona mediante estos pasos fundamentales:</p>
+            <ol>
+                <li><span class="highlight">Establecer un modelo matemático</span> que relacione las variables de entrada con las de salida</li>
+                <li><span class="highlight">Determinar los valores de entrada</span>, eligiendo distribuciones de probabilidad apropiadas</li>
+                <li><span class="highlight">Crear un conjunto de datos de muestra</span> aleatorios según las distribuciones elegidas</li>
+                <li><span class="highlight">Calcular resultados repetidamente</span>, utilizando diferentes grupos de valores aleatorios</li>
+            </ol>
+            <p>El método sustituye rangos de valores (distribuciones de probabilidad) para cualquier factor con incertidumbre inherente y luego calcula los resultados una y otra vez. Dependiendo de la complejidad, pueden necesitarse miles de cálculos para completar la simulación.</p>
+            
+            <div class="img-container">
+                <figure>
+                    <img src="https://datascience.eu/wp-content/uploads/2020/03/monte_carlo_price_1-636x310-2.png" alt="Simulación de Monte Carlo">
+                    <figcaption class="caption">Ejemplo de distribución de probabilidad generada por simulación Monte Carlo</figcaption>
+                </figure>
+            </div>
+            
+            <h2>Componentes de una Simulación Monte Carlo</h2>
+            <p>Una simulación Monte Carlo consta de tres elementos principales:</p>
+            <p><span class="highlight">Variables de entrada</span>: Valores aleatorios que afectan el resultado de la simulación, como la calidad de fabricación o la temperatura en el caso de un análisis de durabilidad de un smartphone.</p>
+            <p><span class="highlight">Variables de salida</span>: Los resultados que se obtienen de la simulación.</p>
+            <p><span class="highlight">Modelo matemático</span>: La ecuación que conecta las variables de entrada y salida.</p>
+            
+            <h2>Ejemplo Práctico: Pronóstico de Ventas</h2>
+            <p>Un ejemplo claro de aplicación es el pronóstico de ventas para un nuevo producto</p>
+          <h3>
+    <a href="./simulacion.html">Ver Ejemplo Detallado</a>
+</h3>
+
+
+            <div class="img-container">
+                <figure>
+                    <img src="https://image.slideserve.com/570932/slide9-n.jpg" alt="Ejemplo de estimación Monte Carlo">
+                    <figcaption class="caption">Ejemplo gráfico de una estimación de ventas con el Método Monte Carlo</figcaption>
+                </figure>
+            </div>
+            
+            <h2>Aplicaciones</h2>
+            <p>Este método tiene numerosas aplicaciones en diferentes campos:</p>
+            <ul>
+                <li>Análisis de riesgos financieros</li>
+                <li>Gestión de proyectos</li>
+                <li>Industria petrolera y gasística</li>
+                <li>Manufactura y control de calidad</li>
+                <li>Previsión de ventas</li>
+                <li>Inteligencia artificial</li>
+                <li>Fijación de precios</li>
+            </ul>
+            <p>La simulación de Monte Carlo proporciona ventajas significativas sobre los modelos predictivos tradicionales, como la capacidad de realizar análisis de sensibilidad y calcular correlaciones entre variables de entrada, lo que permite una toma de decisiones más informada.</p>
+            
+            <div class="img-container">
+                <figure>
+                    <img src="https://www.cheenta.com/wp-content/uploads/2021/09/monte_10000.png" alt="Cálculo de Pi mediante Monte Carlo">
+                    <figcaption class="caption">Cálculo de π mediante el Método Monte Carlo</figcaption>
+                </figure>
+            </div>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        &copy; 2024 UNEFA - Victor Manuel Jerez Lara
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
