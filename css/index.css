@@ -1,0 +1,212 @@
+:root {
+    --color-primario: #0f0;
+    --color-secundario: #1a1a1a;
+    --color-accento: #00ffcc;
+    --color-texto: #fff;
+    --color-fondo: #000;
+    --transition-base: 0.3s ease;
+}
+
+section {
+    padding: 1rem;
+    align-content: center;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    border: 2px solid var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--color-primario);
+}
+
+.membrete {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--color-primario);
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%,
+    100% {
+        text-shadow: 0 0 10px var(--color-primario);
+    }
+    50% {
+        text-shadow: 0 0 30px var(--color-primario);
+    }
+}
+
+.membrete h3 {
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+.contenedor-flex {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.card-effect {
+    background: var(--color-secundario);
+    border-radius: 8px;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    flex: 1 1 400px;
+}
+
+.card-effect:hover {
+    transform: scale(1.02);
+}
+
+.identificacion {
+    padding: 1.5rem;
+    box-shadow: 0 0 15px var(--color-accento);
+}
+
+.identificacion:hover {
+    box-shadow: 0 0 25px var(--color-accento);
+}
+
+.identificacion table {
+    width: 100%;
+    color: var(--color-texto);
+}
+
+.identificacion td {
+    padding: 0.5rem 0;
+    vertical-align: top;
+}
+
+.info-item strong {
+    color: var(--color-accento);
+    display: inline-block;
+    min-width: 120px;
+}
+
+.nav-alterna {
+    box-shadow: 0 0 15px var(--color-primario);
+    flex-basis: 280px;
+}
+
+.nav-alterna:hover {
+    box-shadow: 0 0 25px var(--color-primario);
+}
+
+.nav-alterna ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+.menu-item {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item>a {
+    display: block;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: var(--color-primario);
+    border-left: 4px solid transparent;
+    transition: all var(--transition-base);
+}
+
+.menu-item>a:hover {
+    border-left-color: var(--color-accento);
+    padding-left: 1.2rem;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.6rem;
+    text-decoration: none;
+    color: var(--color-accento);
+    transition: padding-left var(--transition-base);
+}
+
+.submenu a:hover {
+    color: var(--color-primario);
+    padding-left: 1rem;
+}
+
+.active .submenu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .membrete h3 {
+        font-size: 1.25rem;
+    }
+    .card-effect {
+        flex-basis: 100%;
+    }
+}
+
+.nav-alterna ul {
+    display: flex;
+    flex-direction: column;
+    /* Apila elementos verticalmente */
+    gap: 0.8rem;
+    /* Espacio entre botones */
+}
+
+.menu-item>a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--color-texto) !important;
+    /* Color blanco */
+    background: var(--color-secundario);
+    border: 2px solid var(--color-primario);
+    border-radius: 5px;
+    text-transform: uppercase;
+    /* Letras mayúsculas */
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all var(--transition-base);
+}
+
+.menu-item>a:hover {
+    background: var(--color-primario);
+    color: var(--color-secundario) !important;
+    border-color: var(--color-accento);
+    transform: translateY(-2px);
+}
