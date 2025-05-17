@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistemas Expertos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/B1.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/BTN_Float.css">
+</head>
+
+<body>
+    <!-- Botones de navegación flotantes -->
+    <nav class="float-nav">
+        <a href="./../index.html" class="nav-btn" aria-label="Inicio">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </a>
+
+        <a href="#top" class="nav-btn" aria-label="Volver arriba">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        </a>
+    </nav>
+
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">Sistemas Expertos (SE)</h1>
+                <p class="subtitle">Guía Académica - Inteligencia Artificial</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Sección 1: Definición -->
+        <div class="box">
+            <h2 class="title is-4">1. Definición</h2>
+            <p>Los <strong>Sistemas Expertos (SE)</strong> son programas informáticos que emulan la capacidad de toma de decisiones de un experto humano en un dominio específico. Utilizan una combinación de:</p>
+            <ul>
+                <li><strong>Base de conocimientos</strong>: Almacena información especializada</li>
+                <li><strong>Motor de inferencia</strong>: Aplica reglas lógicas para resolver problemas</li>
+                <li><strong>Interfaz de usuario</strong>: Permite la interacción con humanos</li>
+            </ul>
+            <p class="example">Ejemplos clásicos: <span class="highlight">MYCIN</span> (diagnóstico médico), <span class="highlight">DENDRAL</span> (análisis químico)</p>
+        </div>
+
+        <!-- Sección 2: Base de Conocimientos -->
+        <div class="box">
+            <h2 class="title is-4">2. Base de Conocimientos</h2>
+            <p>Componente que almacena conocimiento especializado:</p>
+            <ul>
+                <li><strong>Hechos</strong>: Datos objetivos (ej: "La fiebre alta es síntoma de infección")</li>
+                <li><strong>Reglas heurísticas</strong>: Experiencia práctica en formato SI-ENTONCES</li>
+            </ul>
+            <p class="example">Ejemplo regla: <span class="highlight">"SI fiebre > 39°C ENTONCES considerar infección bacteriana"</span></p>
+            <p>Técnicas de representación:</p>
+            <ul>
+                <li>Redes semánticas</li>
+                <li>Marcos (frames)</li>
+            </ul>
+        </div>
+
+        <!-- Sección 3: Motor de Inferencia -->
+        <div class="box">
+            <h2 class="title is-4">3. Motor de Inferencia</h2>
+            <p>Procesa información para generar conclusiones mediante:</p>
+            <ul>
+                <li><strong>Razonamiento deductivo</strong>: De lo general a lo específico</li>
+                <li><strong>Razonamiento probabilístico</strong>: Manejo de incertidumbre</li>
+            </ul>
+            <p>Tipos de motores:</p>
+            <ul>
+                <li><strong>Deterministas</strong>: Reglas fijas (diagnóstico técnico)</li>
+                <li><strong>Probabilísticos</strong>: Estadísticas/lógica difusa (predicción financiera)</li>
+            </ul>
+            <p class="example">Ejemplo: <span class="highlight">Factores de certeza en MYCIN</span></p>
+        </div>
+
+        <!-- Sección 4: Encadenamiento hacia Adelante -->
+        <div class="box">
+            <h2 class="title is-4">4. Encadenamiento hacia Adelante</h2>
+            <p>Estrategia <span class="highlight">guiada por datos</span>:</p>
+            <ul>
+                <li>Comienza con hechos conocidos</li>
+                <li>Aplica reglas secuencialmente</li>
+                <li>Genera nuevos hechos hasta conclusión</li>
+            </ul>
+            <p class="example">Aplicación: <span class="highlight">Sistemas de monitorización industrial</span></p>
+            <p><strong>Ventaja:</strong> Efectivo con múltiples entradas</p>
+            <p><strong>Limitación:</strong> Posibles conclusiones irrelevantes con exceso de datos</p>
+        </div>
+
+        <!-- Sección 5: Encadenamiento hacia Atrás -->
+        <div class="box">
+            <h2 class="title is-4">5. Encadenamiento hacia Atrás</h2>
+            <p>Estrategia <span class="highlight">guiada por objetivos</span>:</p>
+            <ul>
+                <li>Parte de una hipótesis</li>
+                <li>Busca validación regresiva</li>
+                <li>Solicita datos faltantes</li>
+            </ul>
+            <p class="example">Aplicación: <span class="highlight">Troubleshooting técnico</span></p>
+            <p><strong>Ventaja:</strong> Eficiente con metas claras</p>
+            <p><strong>Limitación:</strong> Ignora alternativas fuera de la hipótesis inicial</p>
+        </div>
+
+        <!-- Sección 6: Adquisición de Conocimiento -->
+        <div class="box">
+            <h2 class="title is-4">6. Adquisición de Conocimiento</h2>
+            <p>Proceso de extracción y codificación:</p>
+            <ul>
+                <li><strong>Métodos:</strong>
+                    <ul>
+                        <li>Entrevistas estructuradas</li>
+                        <li>Aprendizaje automático</li>
+                    </ul>
+                </li>
+                <li><strong>Desafíos:</strong>
+                    <ul>
+                        <li>Cuello de botella del conocimiento</li>
+                        <li>Validación de consistencia</li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="example">Ejemplo: <span class="highlight">Redes neuronales para extracción de patrones</span></p>
+        </div>
+
+        <!-- Sección 7: Lógica Difusa -->
+        <div class="box">
+            <h2 class="title is-4">7. Lógica Difusa</h2>
+            <p>Manejo de <span class="highlight">incertidumbre y vaguedad</span>:</p>
+            <ul>
+                <li>Valores entre 0 y 1</li>
+                <li>Funciones de membresía</li>
+            </ul>
+            <p class="example">Aplicación: <span class="highlight">Sistemas de control climático automático</span></p>
+            <p><strong>Ventaja:</strong> Flexibilidad en escenarios ambiguos</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="neon-accent">© 2025 UNEFA - Simulacion y Modelos - Victor Jerez</p>
+        </div>
+    </footer>
+    <script src="../scripts/BTN_Float.js"></script>
+</body>
+
+</html>
